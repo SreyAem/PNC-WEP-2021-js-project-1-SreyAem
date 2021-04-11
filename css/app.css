@@ -1,0 +1,105 @@
+body{
+    font-size: 18px;
+    font-family: sans-serif;
+}
+/* top Nav */
+input{
+    padding: 10px;
+}
+
+.buttonAdd{
+    padding: 10px;
+    cursor:pointer;
+    margin-right: 10px;
+}
+.topNav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.list{
+    display: flex;
+    padding: 20px;
+}
+.studentList, .formCreate, .searchBar, input{
+    width: 50%;
+}
+.searchBar [type=text]{
+    width: 60%;
+}
+.itemBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.itemBox button[type=reset] {
+    padding: 0 10px;
+    color: red;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+/* Box of Student */
+.studentBox, .form{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+.gradeLabel{
+    height: 7px;
+    width: 100%;
+}
+.no{
+    background-color: lawngreen;
+}
+.little{
+    background-color: yellow;
+}
+.need{
+    background-color: red;
+}
+button:hover{
+    background-color: #c6c7c6;
+}
+
+/* Create form */
+.formCreate{
+    display: none;
+    justify-content: center;
+}
+.form{
+    width: 70%;  
+}
+.form h3{
+    text-align: center;
+}
+.form input{
+    width: 90%;
+    margin: 10px 0;
+}
+.formCreate label{
+    width: 20%;
+    margin-right: 10px;
+}
+.formCreate [type=radio]{
+    width: 5%;
+}
+#closeForm {
+    border: none;
+}
+@media(max-width:800px){
+    .list{
+        display: inline;
+        
+    }
+    .studentList{
+        width: 90%;
+        margin-left: 20px;
+    }
+    .formCreate{
+        width: 100%;
+        margin-top: 20px;
+    }
+}

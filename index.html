@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <script src="js/app.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="topNav">
+        <div class="searchBar">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit" class="buttonAdd"><i class="fa fa-search"></i></button>
+        </div>
+        
+        <button type="button" class="buttonAdd" id="addForm">Add New Student</button>
+        
+    </div>
+    <div class="list">
+        
+        <div class="formCreate" id="formCreate">
+            <form class="form" id='form'>
+                <button type="reset" id="closeForm">X</button>
+                <h3>New Student</h3>
+                <label for="name">Name :</label><br>
+                <input type="text" id="name" name="fullName" placeholder="Student Name..."><br>
+                <label for="class">Class :</label><br>
+                <input type="text" id="class" name="classroom" placeholder="Student Class..."><br>
+                <label for="score">Score :</label><br>
+                <input type="number" id="score" name="score" placeholder="Student Score..."><br>
+                <label for="birth">Date Of Birth :</label><br>
+                <input type="date" id="birth" name="birth" value="2021-05-05"><br>
+                <label for="gender">Gender :</label><br>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Female</label><br>
+                <label for="studentLabel">Do they need help? :</label><br>
+                <input type="radio" name="studentLabel" id="no" value="no">
+                <label for="great">No</label>
+                <input type="radio" name="studentLabel" id="little" value="little">
+                <label for="middle">Little</label>
+                <input type="radio" name="studentLabel" id="need" value="need">
+                <label for="poor">Very Need</label><br><br>
+                <button type="button" class="buttonAdd" id="addList">Add</button>
+                <button type="reset" class="buttonAdd" id="resetValue">Reset</button>
+            </form>
+        </div>
+        
+    </div>
+
+
+    
+</body>
+</html>
